@@ -9,6 +9,7 @@ import MovieView from './components/MovieView'
 import PageNotFound from './components/PageNotFound'
 import ListView from './components/ListView'
 import Footer from './components/Footer';
+import ContactView from './components/ContactView';
 
 
 function App() {
@@ -39,6 +40,7 @@ useEffect(()=> {
         </Route>
         <Route path="/movies/:id" component={MovieView}/>
         <Route path="/list" component={ListView}/>
+        <Route path="/contact" component={ContactView}/>
         <Route path="*" component={PageNotFound} />
       </Switch>
       <Footer/>

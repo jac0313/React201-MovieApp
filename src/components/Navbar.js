@@ -49,6 +49,11 @@ const Navbar = ({ searchText, setSearchText }) => {
                 Must Watch List
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">
+                Contact
+              </NavLink>
+            </li>
           </ul>
          
           

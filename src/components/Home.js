@@ -7,7 +7,7 @@ const Home = () => {
     <>  
       <Hero text="Welcome to my Final Project"/>  
       <main>
-      <div className="backdrop m" style={{ backgroundImage: `url(${background})`,
+      <div className="backdrop" style={{ backgroundImage: `url(${background})`,
             backgroundSize: "cover",
             backgroundPosition: "center"
     }}>
