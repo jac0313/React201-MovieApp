@@ -2,19 +2,19 @@ import { useHistory, Link, NavLink } from "react-router-dom";
 import React from 'react'
 
 
+
 const Navbar = ({ searchText, setSearchText }) => {
   const history = useHistory();
-  
+  //useHistory lets you access the history instance of the react router
 
 
-  const updateSearchText = () => {
-    const $search = document.getElementById("search-input");
+  const updateSearchText = (e) => {
     history.push("/search");
-    setSearchText($search.value);
-  };
+    setSearchText(e.target.value);
+  }
+  //pushes new search text history and routes the user to the search page automatically
 
-
-
+//renders the navbar with search input  
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -25,7 +25,7 @@ const Navbar = ({ searchText, setSearchText }) => {
           className="navbar-toggler" 
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
+          data-bs-target="#navbar"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"

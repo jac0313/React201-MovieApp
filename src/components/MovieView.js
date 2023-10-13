@@ -17,17 +17,19 @@ useEffect(() => {
           setIsLoading(false);
         });
     }, [id]);
-
+// fetches movie details by id from API
     function renderMovieDetails(){
         if(isLoading){
             return <Hero text= "Loading..."/>
         }
+        // renders text if there is lag
         if (movieDetails) {
             const posterPath =`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`;
             const backdropUrl =`https://image.tmdb.org/t/p/original${movieDetails.backdrop_path}`
             return (
               <>
                 <Hero text={movieDetails.original_title} backdrop={backdropUrl} />
+        {/* renders the movie poster and details */}
           <div className="container my-5">
             <div className="row">
               <div className="col-md-3">

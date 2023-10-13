@@ -58,6 +58,7 @@ const ListView = () => {
       body: JSON.stringify(updatedMovieObject),
     }).then(() => getMovies())
   }
+  
 
   // creates new input form and displays movie list with delete and update buttons
   return (
@@ -77,7 +78,7 @@ const ListView = () => {
 
 
    
-
+{/* moving movies.map into the tbody created 1 table, but above Table created a table for each element */}
     <div className="App">
       {/* {movies.map((movie, index) => ( */}
         <div className="container mt-2" >

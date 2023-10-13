@@ -11,11 +11,12 @@ const Home = () => {
             backgroundSize: "cover",
             backgroundPosition: "center"
     }}>
+        {/* sets background image on homeview */}
       <div className= "container-fluid">
             <div className="row">
                 <div className="col-lg-8-offset-lg-2 my-5">
                 <p className="lead text-white text-center">
-                    This is a movie browser site for people who love to watch movies and constantly make mental reminders to add that to the list of movies to watch. Here, you can make a Must Watch movie list so you'll never forget and search for more!
+                    This is a movie browser website for movie lovers. And if you're like me, you constantly have a mental list of movies to watch. This site also includes a must watch list that can be updated so you never forget what you wanted to watch when you finally have some free time. Enjoy!
                 </p>
                 </div>
             </div>

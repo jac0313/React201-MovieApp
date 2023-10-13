@@ -15,7 +15,7 @@ import ContactView from './components/ContactView';
 function App() {
 const [searchResults, setSearchResults]= useState([])
 const [searchText, setSearchText] = useState('')
-
+//sets state for the search input in the navbar
 useEffect(()=> {
   if(searchText){
   fetch(`https://api.themoviedb.org/3/search/movie?api_key=267c28afad418890f877e7f790b0fda9&language=en-US&query=${searchText}&page=1&include_adult=false`)
@@ -25,7 +25,7 @@ useEffect(()=> {
   })
 }
 }, [searchText])
-
+//useEffect calls the function after the DOM is rendered, fetches search results from the TMDB API, then displays the data as a json object
 
   return (
     <div>

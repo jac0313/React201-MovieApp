@@ -9,7 +9,7 @@ const MovieCard = ({ movie }) => {
   } else {
     posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
   }
-
+//sets image for when no movie poster is available, below shows poster and title from search with button for more details
 
   const detailUrl = `/movies/${movie.id}`
   return (
@@ -32,7 +32,7 @@ const SearchView = ({ keyword, searchResults }) => {
   const resultsHtml = searchResults.map((obj, i) => {
     return <MovieCard movie={obj} key={i} />
   })
-
+//maps through search result data and displays in cards, conditionals for if movie isn't found with text in hero
   if (searchResults.length === 0) {
     return (
       <div>
